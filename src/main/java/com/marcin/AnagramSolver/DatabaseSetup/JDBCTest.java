@@ -1,0 +1,28 @@
+package com.marcin.AnagramSolver.DatabaseSetup;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+/**
+ * Class tests the connection to the MySQL database.
+ * 
+ * @author dream-tree
+ * @version 2.00, June 2018
+ */
+public class JDBCTest {
+		
+	public static void main(String[] args) {
+		
+		String jdbcUrl = "jdbc:mysql://localhost:3306/anagramator2?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true";
+		String username = "accessor";
+		String password = "accessor";
+				
+		try {
+			Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
+			System.out.println("Connection successful!");
+		} catch (Exception e) {
+			System.out.println("Connection unsuccessful!");
+			e.printStackTrace();
+		}	
+	}
+}
