@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * Main controller class for the application.
+ * Controllers for the application.
  * 
  * @author dream-tree
  * @version 2.00, June 2018

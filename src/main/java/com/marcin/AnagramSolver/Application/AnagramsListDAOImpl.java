@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 /**
  * DAO class implementing the {@link AnagramsListDAO} interface
  * for CRUD operations and common queries.
- * This implementation uses Hibernate ORM framework.
+ * This implementation uses thr Hibernate ORM framework.
  * 
  * @author dream-tree
  * @version 2.00, June 2018

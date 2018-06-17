@@ -7,10 +7,6 @@ import javax.validation.constraints.Pattern;
 
 import org.springframework.stereotype.Component;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * Class serves as a model for holding user input (query in a web form) 
  * and the corresponding result data (anagrams).
@@ -25,7 +21,7 @@ public class QueryResult {
 	 * User input data holder.
 	 */
 	@NotNull
-	@Pattern(regexp = "[a-zA-Z]{3,}", message="Only letters allowed (minimum 3).")
+	@Pattern(regexp = "[a-zA-Z]{3,}", message="Only letters allowed (3 minimum).")
 	private String query;
 	
 	/**

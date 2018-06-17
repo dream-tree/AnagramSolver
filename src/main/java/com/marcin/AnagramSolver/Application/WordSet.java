@@ -28,28 +28,28 @@ public class WordSet {
 	private int id;
 	
 	/**
-	 * Points if given key-value pair (alphabetized word and all of its anagrams) 
+	 * Points if a given key-value pair (alphabetized word and all of its anagrams) 
 	 * is an original database entry or is added by the user.
 	 * Original database entry cannot be deleted.
 	 * <ul>
 	 * <li> 0 means an original database entry</li>
 	 * <li> 1 means a database entry added by user</li>
 	 * </ul>
-	 * Any feature using this field is not developed yet.
+	 * Note: Any feature using this field is not developed yet.
 	 */
 	@Column(name="marker")
 	private int marker;
 	
 	/**
 	 * An alphabetized word (key).
-	 * Alphabetized means that all chars of a given word was lexicographically sorted.
+	 * Alphabetized means that all chars of a given word were lexicographically sorted.
 	 * New string created in that way is called an alphabetized word.
 	 */
 	@Column(name="alphabetized_word")
 	private String alphabetizedWord;
 	
 	/**
-	 * String of anagrams mapped to given alphabetized word (value).
+	 * String of anagrams mapped to a given alphabetized word (value).
 	 */
 	@Column(name="mapped_anagrams")
 	private String mappedAnagrams;

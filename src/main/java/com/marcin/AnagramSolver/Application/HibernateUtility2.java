@@ -4,7 +4,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 /**
- * Class constructs Hibernate ORM' SessionFactory singleton object 
+ * Class constructs the Hibernate ORM' SessionFactory singleton object 
  * in the lazy initialization mode.
  * 
  * @author dream-tree
