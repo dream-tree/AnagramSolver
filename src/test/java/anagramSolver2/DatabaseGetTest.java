@@ -2,11 +2,13 @@ package anagramSolver2;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.marcin.AnagramSolver.Application.HibernateUtility;
+import com.marcin.AnagramSolver.Application.HibernateUtility2;
 import com.marcin.AnagramSolver.Application.WordSet;
 
 public class DatabaseGetTest {
@@ -34,5 +36,10 @@ public class DatabaseGetTest {
 		Assert.assertNotEquals(session.get(WordSet.class, 999).getMappedAnagrams(), "appel apple pepla ppppp");
 		Assert.assertNotEquals(session.get(WordSet.class, 5555).getMappedAnagrams(), " enter rente terne treen ");
 		Assert.assertNotEquals(session.get(WordSet.class, 11456).getMappedAnagrams(), "shawling whalingss ");
+	}
+	
+	@AfterClass
+	public static void close() {		
+		session.close();
 	}
 }
