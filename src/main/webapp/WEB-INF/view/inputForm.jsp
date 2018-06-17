@@ -11,8 +11,6 @@
 
 	<style> 
 		.error1 {color:red}
-		.error2 {color:blue}
-		.error3 {color:green}
 	</style>
 
 </head>

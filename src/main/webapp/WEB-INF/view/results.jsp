@@ -21,7 +21,7 @@
 	<strong>${theQueryResult}</strong>
 	<br> --%>
 		
-	 	Found words:
+	Found words:
 	<ul>
 		<c:forEach var="temp" items="${theQueryResult.resultSet}">
 			<li>${temp}</li>
@@ -34,7 +34,5 @@
 
 	<br>
 	
-	
-
 </body>
 </html>
