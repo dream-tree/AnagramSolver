@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 /**
  * DAO class implementing the {@link AnagramsListDAO} interface
  * for CRUD operations and common queries.
- * This implementation uses thr Hibernate ORM framework.
+ * This implementation uses the Hibernate ORM framework.
  * 
  * @author dream-tree
  * @version 2.00, June 2018
@@ -24,15 +24,15 @@ public class AnagramsListDAOImpl implements AnagramsListDAO {
 		Session session = sessionFactory.getCurrentSession();
 		WordSet wordSet = null;
 		try {
-				session.beginTransaction();	
-				wordSet = (WordSet) session.createQuery("from WordSet where alphabetizedWord ='"
-						+ alphabetizedWord + "'").getSingleResult();			
-				session.getTransaction().commit();
+			session.beginTransaction();	
+			wordSet = (WordSet) session.createQuery("from WordSet where alphabetizedWord ='"
+					+ alphabetizedWord + "'").getSingleResult();			
+			session.getTransaction().commit();
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}		
 		session.close();
-		// '\n' avoids white spaces to prevent splitting result string 
+		// '\n' avoids white spaces to prevent splitting the result string 
 		// into separate words in further processing
 		return wordSet == null ? "Nothing\nwas\nfound" : wordSet.getMappedAnagrams();
 	}

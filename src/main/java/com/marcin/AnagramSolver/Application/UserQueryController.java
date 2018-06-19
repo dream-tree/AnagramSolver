@@ -33,7 +33,7 @@ public class UserQueryController {
 	}
 
 	/**
-	 * Adds a model for holding user query data and corresponding result data (anagrams).
+	 * Adds the model for holding user query data and corresponding result data (anagrams).
 	 * @param words model holding user query and corresponding result data
 	 */
 	@RequestMapping("/showForm")

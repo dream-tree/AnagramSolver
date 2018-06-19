@@ -35,7 +35,7 @@ public class WordParser {
 	
 	/*
 	 * (non-Javadoc) 
-	 * used only for exercising purposes; 
+	 * Used only for exercising purposes; 
 	 * method result: 173.530 list elements 
 	 */
 	public static List<String> readWords1() {                    
@@ -56,9 +56,9 @@ public class WordParser {
 	
 	/*
 	 * (non-Javadoc) 
-	 * used only for exercising purposes; 
+	 * Used only for exercising purposes; 
 	 * method result: 157.079 map entries (all unique alphabetized words)
-	 * method result: 157.004 map entries after removal of 1 and 2-letter words
+	 * method result: 157.004 map entries after the removal of 1 and 2-letter words
 	 */
 	public static Map<String, List<String>> readWords2() {															
 		Map<String, List<String>> map = new LinkedHashMap<String, List<String>>();
@@ -87,13 +87,13 @@ public class WordParser {
 	/*
 	 * (non-Javadoc) 
 	 * used only for exercising purposes; 
-	 * method result: 12.368 map entries after removal one-word entries (no anagrams)
-	 * [ATTENTION: this should be discarded - user may want to get a word from single letters not from a "real" word"]
-	 * method result: 12.345 after additional removal of 1 and 2-letter words
+	 * method result: 12.368 map entries after the removal of one-word entries (no anagrams)
+	 * [ATTENTION: this should be discarded - user may want to get a word from single letters, not only from a "real" word"]
+	 * method result: 12.345 map entries after the additional removal of 1 and 2-letter words
 	 */
 	/**
-	 * Reading words from the .csv file and putting them into a multi-map.
-	 * Only words composed of four or more letters are allowed to be saved in the database.
+	 * Reads words from the .csv file and puts them into a multi-map.
+	 * Only words composed of three or more letters are allowed to be saved in the database.
 	 */
 	public static Map<String, List<String>> readWords3() { 														   
 		Map<String, List<String>> map = new LinkedHashMap<String, List<String>>();
@@ -134,7 +134,7 @@ public class WordParser {
 	 * Alphabetizing means that all chars of a given word are being sorted lexicographically.
 	 * New string created in that way is called an alphabetized word.
 	 * @param s "real" word to be alphabetized
-	 * @return an alphabetized word (a "non-real" word)
+	 * @return an alphabetized word (a "non-real" word, a key in the multimap)
 	 */
 	private static String alphabetize(String s) {
 		char[] a = s.toCharArray();

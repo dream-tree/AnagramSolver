@@ -16,7 +16,7 @@ public class HibernateUtility2 {
 	}
 	
 	/**
-	 * Inner static class constructing SessionFactory object.
+	 * Inner static class constructing the SessionFactory object.
 	 * @author oVoISheRe
 	 */
 	private static class SessionFactoryHelper {

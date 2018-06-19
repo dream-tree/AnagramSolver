@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 /**
- * Class tests the connection to the MySQL database.
+ * Class tests the MySQL database connection.
  * 
  * @author dream-tree
  * @version 2.00, June 2018

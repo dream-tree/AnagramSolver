@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import org.springframework.stereotype.Component;
 
 /**
- * Class mapping Java class to the relational database.
+ * Class mapping POJO to the relational database.
  * Each instance of the class holds a keyword called {@link #alphabetizedWord} 
  * mapping to a string consisting of a list of its anagrams {@link #mappedAnagrams}.
  * 
