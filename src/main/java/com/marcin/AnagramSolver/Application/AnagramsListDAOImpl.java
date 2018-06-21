@@ -30,8 +30,9 @@ public class AnagramsListDAOImpl implements AnagramsListDAO {
 			session.getTransaction().commit();
 		} catch (Exception ex) {
 			ex.printStackTrace();
+		} finally {
+			session.close();
 		}		
-		session.close();
 		// '\n' avoids white spaces to prevent splitting the result string 
 		// into separate words in further processing
 		return wordSet == null ? "Nothing\nwas\nfound" : wordSet.getMappedAnagrams();

@@ -8,7 +8,6 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.marcin.AnagramSolver.Application.HibernateUtility;
-import com.marcin.AnagramSolver.Application.HibernateUtility2;
 import com.marcin.AnagramSolver.Application.WordSet;
 
 public class DatabaseGetTest {

@@ -7,8 +7,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.stereotype.Component;
-
 /**
  * Class mapping POJO to the relational database.
  * Each instance of the class holds a keyword called {@link #alphabetizedWord} 
@@ -19,7 +17,6 @@ import org.springframework.stereotype.Component;
  */
 @Entity
 @Table(name="word_base")
-@Component
 public class WordSet {
 	
 	@Id
@@ -32,8 +29,8 @@ public class WordSet {
 	 * is an original database entry or is added by the user.
 	 * Original database entry cannot be deleted.
 	 * <ul>
-	 * <li> 0 means an original database entry</li>
-	 * <li> 1 means a database entry added by user</li>
+	 * <li>0 means an original database entry</li>
+	 * <li>1 means a database entry added by user</li>
 	 * </ul>
 	 * Note: Any feature using this field is not developed yet.
 	 */

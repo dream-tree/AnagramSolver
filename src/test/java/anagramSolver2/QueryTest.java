@@ -23,13 +23,13 @@ public class QueryTest {
 	
 	@Test(expected=javax.persistence.NoResultException.class)
 	public void shouldThrownNoResultException1() {
-		WordSet wordSet = (WordSet) session.createQuery("from WordSet where alphabetizedWord ='read'").getSingleResult();			
+		session.createQuery("from WordSet where alphabetizedWord ='read'").getSingleResult();			
 				session.getTransaction().commit();
 	}
 	
 	@Test(expected=javax.persistence.NoResultException.class)
 	public void shouldThrownNoResultException2() {
-		WordSet wordSet = (WordSet) session.createQuery("from WordSet where alphabetizedWord ='yyyyy'").getSingleResult();			
+		session.createQuery("from WordSet where alphabetizedWord ='yyyyy'").getSingleResult();			
 				session.getTransaction().commit();
 	}
 	

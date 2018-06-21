@@ -13,8 +13,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
-import org.springframework.stereotype.Component;
-
 import com.opencsv.CSVReader;
 /**
  * Class parses all dictionary words coming from the .csv file, 
@@ -25,7 +23,6 @@ import com.opencsv.CSVReader;
  * @author dream-tree
  * @version 2.00, June 2018
  */
-@Component
 public class WordParser {
 
 	private static final Path path = FileSystems.getDefault().getPath("src/main/resources/word_list.csv");
