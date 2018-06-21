@@ -32,7 +32,7 @@ public class WordSet {
 	 * <li>0 means an original database entry</li>
 	 * <li>1 means a database entry added by user</li>
 	 * </ul>
-	 * Note: Any feature using this field is not developed yet.
+	 * Note: Any feature using this field was not developed yet.
 	 */
 	@Column(name="marker")
 	private int marker;
