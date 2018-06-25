@@ -83,7 +83,6 @@ public class WordParser {
 
 	/*
 	 * (non-Javadoc) 
-	 * used only for exercising purposes; 
 	 * method result: 12.368 map entries after the removal of one-word entries (no anagrams)
 	 * [ATTENTION: this should be discarded - user may want to get a word from single letters, not only from a "real" word"]
 	 * method result: 12.345 map entries after the additional removal of 1 and 2-letter words
