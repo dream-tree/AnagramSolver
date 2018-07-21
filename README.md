@@ -11,7 +11,7 @@ Enable is The Enhanced North American Benchmark LExicon (ENABLE) and it is word 
 ----
 
 Used technologies:
-Spring MVC, Hibernate ORM, Hibenate Validator, HTML, JSP, JSTL.<br>Creating this app I didn't mind to pay much attention to the presentation layer (no graphical bells and whistles here). The main purpose was to build a web app doing its job: to enable querying the database and displaying the results on the page. 
+Spring MVC, Hibernate ORM, Hibernate Validator, HTML, JSP, JSTL.<br>Creating this app I didn't mind to pay much attention to the presentation layer (no graphical bells and whistles here). The main purpose was to build a web app doing its job: to enable querying the database and displaying the results on the page. 
 
 ---
 
